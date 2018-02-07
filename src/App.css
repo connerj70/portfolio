@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Mako');
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+#small-logo {
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  animation: hoverin 2.5s, bounce 1s infinite alternate ease-in-out;
+}
+
+.laser {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s infinite ease-in;
+  animation-delay: 2.1s;
+  opacity: 0;
+}
+
+.laser1 {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+
+.laser2 {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s;
+  animation-delay: 2.3s;
+  opacity: 0;
+}
+
+.laser3 {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s;
+  animation-delay: 2.4s;
+  opacity: 0;
+}
+
+.laser4 {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+.laser5 {
+  position: absolute;
+  left: 104px;
+  top: 30px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire 0.5s;
+  animation-delay: 2.6s;
+  opacity: 0;
+}
+
+.laser6 {
+  position: absolute;
+  left: 154px;
+  top: 50px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire2 0.5s;
+  animation-delay: 2.1s;
+  opacity: 0;
+}
+
+.laser7 {
+  position: absolute;
+  left: 154px;
+  top: 50px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire2 0.5s;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+
+.laser8 {
+  position: absolute;
+  left: 154px;
+  top: 50px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire2 0.5s infinite ease-in;
+  animation-delay: 2.3s;
+  opacity: 0;
+}
+
+.laser9 {
+  position: absolute;
+  left: 154px;
+  top: 50px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire2 0.5s;
+  animation-delay: 2.4s;
+  opacity: 0;
+}
+
+.laser10 {
+  position: absolute;
+  left: 154px;
+  top: 50px;
+  width: 2px;
+  height: 5px;
+  background-color: red;
+  transform: rotate(42deg);
+  animation: fire2 0.5s;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+.hero-container h1 {
+  font-size: 100px;
+  z-index: 5;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: 'Mako';
+  letter-spacing: 1.1rem;
+}
+
+.sub-body {
+  width: 100vw;
+  height: 200vh;
+  background-color: black;
+  /* color: #A3F2F9; */
+  color: #6BBEE9;
+}
+
+.sub-body h2 {
+  background-color: black;
+  margin: 0;
+  font-size: 50px;
+}
+
+@keyframes hoverin {
+  from {
+    left: -30vw;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 50px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  from{
+    top: 20px
+  }
+  to {
+    top: 25px
+  }
+}
+
+@keyframes fire {
+  from{
+    left: 104px;
+    top: 30px;
+    opacity: 0.5;
+  }
+  to {
+    top: -5px;
+    left: 140px;
+    opacity: 1;
+  }
+}
+
+@keyframes fire2 {
+  from{
+    left: 154px;
+    top: 50px;
+    opacity: 0.5;
+  }
+  to {
+    top: -10px;
+    left: 200px;
+    opacity: 1;
+  }
+}
